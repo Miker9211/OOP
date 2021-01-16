@@ -1,20 +1,30 @@
 #include<iostream>
 #include<string>
+#include<vector>
 #include "car.h"
 using std::string;
 using std::cout;
+using std::vector;
 
 int main()
 {
-    Car car_1 = Car("green", 1, 99);
-    Car car_2 = Car("blue", 2, 120);
-    Car car_3 = Car("yellow", 3, 150);
+    vector<Car*> my_cars;
+    Car* cp = nullptr;
 
-    car_1.IncrementDistance();
-    car_2.IncrementDistance();
-    car_3.IncrementDistance();
+    vector<string> colors{"red", "blue", "green"};
 
-    car_1.PrintCarData();
-    car_2.PrintCarData();
-    car_3.PrintCarData();
+    for (int i=0; i < 100; i++) {;
+        cp = new Car(colors[i%3], i+1, 0);
+        my_cars.push_back(cp);
+    }
+
+    for(Car* cp : my_cars)
+    {
+        cp->IncrementDistance();
+    }
+
+    for(Car* cp : my_cars)
+    {
+        cp->PrintCarData();
+    }
 }
