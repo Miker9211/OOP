@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/mikey/OOP/cmake/src/Oop_Class1.cpp
+iostream
+-
+string
+-
+car.h
+/mnt/c/Users/mikey/OOP/cmake/src/car.h
+
+/mnt/c/Users/mikey/OOP/cmake/src/car.h
+string
+-
+

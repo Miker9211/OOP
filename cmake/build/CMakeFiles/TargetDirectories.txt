@@ -1,0 +1,3 @@
+/mnt/c/Users/mikey/OOP/cmake/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/mikey/OOP/cmake/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/mikey/OOP/cmake/build/CMakeFiles/Oop_exe.dir
