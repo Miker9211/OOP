@@ -16,6 +16,10 @@ class car {
     {
         distance++;
     }
+
+    car(string c, int n, int d) : color(c), number(n), distance(d)
+    {} 
+
     string color;
     int distance = 0;
     int number;
@@ -24,15 +28,9 @@ class car {
 
 int main()
 {
-    car car_1, car_2, car_3;
-
-    car_1.color = "green";
-    car_2.color = "blue";
-    car_3.color = "yellow";
-
-    car_1.number = 1;
-    car_2.number = 2;
-    car_3.number = 3;
+    car car_1 = car("green", 1, 99);
+    car car_2 = car("blue", 2, 120);
+    car car_3 = car("yellow", 3, 150);
 
     car_1.IncrementDistance();
     car_2.IncrementDistance();
