@@ -1,30 +1,8 @@
 #include<iostream>
 #include<string>
+#include "car.h"
 using std::string;
 using std::cout;
-
-class car {
-    public:
-
-    void PrintCarData(){
-
-        cout << "The Distance that the " << color << "car " << number << " has traveled distance: " << distance << "\n";
-
-    }
-
-    void IncrementDistance()
-    {
-        distance++;
-    }
-
-    car(string c, int n, int d) : color(c), number(n), distance(d)
-    {} 
-
-    string color;
-    int distance = 0;
-    int number;
-
-};
 
 int main()
 {
